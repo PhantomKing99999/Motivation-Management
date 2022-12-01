@@ -11,6 +11,7 @@
 		A6C06D5A29387C3000DB6826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C06D5929387C3000DB6826 /* ContentView.swift */; };
 		A6C06D5C29387C3200DB6826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C06D5B29387C3200DB6826 /* Assets.xcassets */; };
 		A6C06D5F29387C3200DB6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C06D5E29387C3200DB6826 /* Preview Assets.xcassets */; };
+		A6C06D682938824600DB6826 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A6C06D672938824600DB6826 /* DesignSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A6C06D5929387C3000DB6826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6C06D5B29387C3200DB6826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C06D5E29387C3200DB6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6C06D652938821100DB6826 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../../../../Downloads/DesignSystem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C06D682938824600DB6826 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +38,10 @@
 		A6C06D4B29387C3000DB6826 = {
 			isa = PBXGroup;
 			children = (
+				A6C06D652938821100DB6826 /* DesignSystem */,
 				A6C06D5629387C3000DB6826 /* Motivation Management */,
 				A6C06D5529387C3000DB6826 /* Products */,
+				A6C06D662938824600DB6826 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A6C06D662938824600DB6826 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = "Motivation Management";
+			packageProductDependencies = (
+				A6C06D672938824600DB6826 /* DesignSystem */,
+			);
 			productName = "Motivation Management";
 			productReference = A6C06D5429387C3000DB6826 /* Motivation Management.app */;
 			productType = "com.apple.product-type.application";
@@ -339,6 +354,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6C06D672938824600DB6826 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6C06D4C29387C3000DB6826 /* Project object */;
 }
