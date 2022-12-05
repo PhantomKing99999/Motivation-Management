@@ -2,7 +2,7 @@
 //  Motivation_ManagementApp.swift
 //  Motivation Management
 //
-//  Created by PhantomKing on 1/12/2022.
+//  Created by PhantomSuckOnMyBallz on 1/12/2022.
 //
 
 import SwiftUI
