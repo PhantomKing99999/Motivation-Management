@@ -51,7 +51,7 @@ public struct ContentView: View {
                         Text("Forgot your password?")
                     })
                     Spacer()
-                    NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
+                    NavigationLink(destination: Tutorial(), isActive: $showingLoginScreen) {
                         EmptyView()
                     }
                 }
