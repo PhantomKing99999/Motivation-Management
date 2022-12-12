@@ -12,6 +12,8 @@
 		A6C06D5C29387C3200DB6826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C06D5B29387C3200DB6826 /* Assets.xcassets */; };
 		A6C06D5F29387C3200DB6826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C06D5E29387C3200DB6826 /* Preview Assets.xcassets */; };
 		A6C06D682938824600DB6826 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A6C06D672938824600DB6826 /* DesignSystem */; };
+		D8F5D3A12946B68A003C0EE5 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5D3A02946B68A003C0EE5 /* CreateAccount.swift */; };
+		D8F5D3A52946BA54003C0EE5 /* ForgotPasword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5D3A42946BA54003C0EE5 /* ForgotPasword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,9 @@
 		A6C06D5929387C3000DB6826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6C06D5B29387C3200DB6826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C06D5E29387C3200DB6826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A6C06D652938821100DB6826 /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../../../../Downloads/DesignSystem; sourceTree = "<group>"; };
+		D8C61B552940376F00A25FFE /* DesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystem; path = ../DesignSystem; sourceTree = "<group>"; };
+		D8F5D3A02946B68A003C0EE5 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
+		D8F5D3A42946BA54003C0EE5 /* ForgotPasword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		A6C06D4B29387C3000DB6826 = {
 			isa = PBXGroup;
 			children = (
-				A6C06D652938821100DB6826 /* DesignSystem */,
+				D8C61B552940376F00A25FFE /* DesignSystem */,
 				A6C06D5629387C3000DB6826 /* Motivation Management */,
 				A6C06D5529387C3000DB6826 /* Products */,
 				A6C06D662938824600DB6826 /* Frameworks */,
@@ -58,6 +62,8 @@
 			children = (
 				A6C06D5729387C3000DB6826 /* Motivation_ManagementApp.swift */,
 				A6C06D5929387C3000DB6826 /* ContentView.swift */,
+				D8F5D3A02946B68A003C0EE5 /* CreateAccount.swift */,
+				D8F5D3A42946BA54003C0EE5 /* ForgotPasword.swift */,
 				A6C06D5B29387C3200DB6826 /* Assets.xcassets */,
 				A6C06D5D29387C3200DB6826 /* Preview Content */,
 			);
@@ -153,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C06D5A29387C3000DB6826 /* ContentView.swift in Sources */,
+				D8F5D3A12946B68A003C0EE5 /* CreateAccount.swift in Sources */,
 				A6C06D5829387C3000DB6826 /* Motivation_ManagementApp.swift in Sources */,
+				D8F5D3A52946BA54003C0EE5 /* ForgotPasword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

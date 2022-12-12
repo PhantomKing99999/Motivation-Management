@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  CreateAccount.swift
 //  Motivation Management
 //
-//  Created by PhantomSuckOnMyBallz on 1/12/1969.
+//  Created by Lin Joe on 12/12/2022.
 //
 
 import SwiftUI
 import DesignSystem
 
-public struct ContentView: View {
+public struct CreateAccount: View {
     @State private var username = ""
     @State private var password = ""
     @State private var wrongUsername: Float = 0
@@ -18,12 +18,19 @@ public struct ContentView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    Text("Login")
+                    Text("Sign Up")
                         .font(.largeTitle)
                         .bold()
                         .padding()
                     Spacer()
                     TextField("Username", text: $username)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .border(.red, width: CGFloat(wrongUsername))
+                    
+                    TextField("Email", text: $username)
                         .padding()
                         .frame(width: 300, height: 50)
                         .background(Color.black.opacity(0.05))
@@ -37,8 +44,6 @@ public struct ContentView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .border(.red, width: CGFloat(wrongPassword))
-                    NavigationLink(destination: CreateAccount(), label :{ Text("Don't have a account? Register")
-                    })
                     Spacer()
                     Button("Login") {
                         authenticateUser(username: username, password: password)
@@ -47,9 +52,6 @@ public struct ContentView: View {
                     .frame(width: 300, height: 50)
                     .background(Color.blue)
                     .cornerRadius(10)
-                    NavigationLink(destination: ForgotPasword(), label: {
-                        Text("Forgot your password?")
-                    })
                     Spacer()
                     NavigationLink(destination: Text("You are logged in @\(username)"), isActive: $showingLoginScreen) {
                         EmptyView()
@@ -75,7 +77,7 @@ public struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct CreateAccount_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
