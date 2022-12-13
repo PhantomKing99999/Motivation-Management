@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-struct Tutorial: View {
+struct Tutorial2: View {
     var body: some View {
         VStack{
-            Image("ic-wave")
-            Text("Welcome to Motivation Management")
+            Image("Time")
+            Text("Here you can view your overall Productivity!")
                 .bold()
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
-            Text("Multitudes of Motivation Management Techniques at the Palm of your hand.")
+            Text("You can check what you spend your time doing and use the information to improve!")
+                .multilineTextAlignment(.center)
                 .padding()
             Spacer()
-            NavigationLink(destination: Tutorial2(), label: {Image("Pager")})
+            NavigationLink(destination: Tutorial3(), label: {Image("Pager")})
             //            Button{
             //                print("Back Tapped")
             //            } label: {
@@ -32,7 +33,7 @@ struct Tutorial: View {
         }
     }
 }
-    struct Tutorial_Previews: PreviewProvider {
+    struct Tutorial2_Previews: PreviewProvider {
         static var previews: some View {
             Tutorial()
         }

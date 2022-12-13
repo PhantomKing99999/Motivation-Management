@@ -1,24 +1,25 @@
 //
-//  Tutorial.swift
+//  Tutorial5.swift
 //  Motivation Management
 //
-//  Created by Lin Joe on 12/12/2022.
+//  Created by Lin Joe on 13/12/2022.
 //
 
 import SwiftUI
 
-struct Tutorial: View {
+struct Tutorial5: View {
     var body: some View {
         VStack{
-            Image("ic-wave")
-            Text("Welcome to Motivation Management")
+            Image("Entries")
+            Text("Here you can write new Diary entries!")
                 .bold()
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
-            Text("Multitudes of Motivation Management Techniques at the Palm of your hand.")
+            Text("After a day of work, write down your thoughts and release your stress here!")
+                .multilineTextAlignment(.center)
                 .padding()
             Spacer()
-            NavigationLink(destination: Tutorial2(), label: {Image("Pager")})
+            NavigationLink(destination: Tutorial6(), label: {Image("Pager")})
             //            Button{
             //                print("Back Tapped")
             //            } label: {
@@ -32,9 +33,9 @@ struct Tutorial: View {
         }
     }
 }
-    struct Tutorial_Previews: PreviewProvider {
-        static var previews: some View {
-            Tutorial()
-        }
-    }
 
+struct Tutorial5_Previews: PreviewProvider {
+    static var previews: some View {
+        Tutorial5()
+    }
+}
